@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import '../bin/add.dart';
+import '../bin/list.dart';
 
 import 'contact.dart';
 
@@ -27,7 +28,8 @@ void main() {
 
         break;
       case '2':
-
+        // Importamos el metodo/funcion de listar y pasamos nustra lista agenda
+        list(agenda);
         break;
       case '3':
         // TODO: Aprendiz 3 - Implementar lógica para buscar
