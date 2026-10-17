@@ -1,9 +1,10 @@
 import 'dart:io';
+import 'contact.dart';
 
 import '../bin/add.dart';
+import '../bin/delete.dart';
 import '../bin/list.dart';
-
-import 'contact.dart';
+import '../bin/search.dart';
 
 // El Aprendiz 2 definirá los atributos de esta clase
 
@@ -28,14 +29,16 @@ void main() {
 
         break;
       case '2':
-        // Importamos el metodo/funcion de listar y pasamos nustra lista agenda
+        // Importamos el metodo/funcion de listar y pasamos nuestra lista agenda
         list(agenda);
         break;
       case '3':
-        // TODO: Aprendiz 3 - Implementar lógica para buscar
+        // Importamos el metodo/funcion de buscar y pasamos nuestra lista agenda
+        BuscarContacto(agenda);
         break;
       case '4':
-        // TODO: Aprendiz 3 - Implementar lógica para eliminar
+        // Importamos el metodo/funcion de eliminar y pasamos nuestra lista agenda
+        EliminarContacto(agenda);
         break;
       case '5':
         print('Saliendo de la agenda...');
