@@ -1,11 +1,10 @@
 import 'dart:io';
 
+import '../bin/add.dart';
+
+import 'contact.dart';
+
 // El Aprendiz 2 definirá los atributos de esta clase
-class Contacto{
-  String nombre;
-  String telefono;
-  Contacto(this.nombre, this.telefono);
-}
 
 void main() {
   List<Contacto> agenda = [];
@@ -24,10 +23,11 @@ void main() {
 
     switch (opcion) {
       case '1':
-        // TODO: Aprendiz 1 - Implementar lógica para agregar
+        Add(agenda);
+
         break;
       case '2':
-        // TODO: Aprendiz 2 - Implementar lógica para listar
+
         break;
       case '3':
         // TODO: Aprendiz 3 - Implementar lógica para buscar
